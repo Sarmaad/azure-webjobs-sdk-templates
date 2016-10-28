@@ -141,7 +141,6 @@ public static async Task<object> Run(HttpRequestMessage req, TraceWriter log)
 ```javascript
 module.exports = function (context, data) {
     context.log('GitHub WebHook triggered!', data.comment.body);
-    context.res = { body: 'New GitHub comment: ' + data.comment.body };
-    context.done();
+    context.res.send('New GitHub comment: ' + data.comment.body);
 };
 ```
