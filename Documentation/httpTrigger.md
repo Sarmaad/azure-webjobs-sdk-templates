@@ -86,8 +86,8 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceW
 
 ## Example Node.js code for an HTTP trigger function 
 
-We support a [express-like api](https://expressjs.com/en/4x/api.html#res) for node http triggers.
-See supported methods for [context.req](https://github.com/Azure/azure-webjobs-sdk-script/blob/dev/src/WebJobs.Script/Content/Script/http/request.js) and [context.res](https://github.com/Azure/azure-webjobs-sdk-script/blob/dev/src/WebJobs.Script/Content/Script/http/response.js);
+We support an <a href="https://expressjs.com/en/4x/api.html#res" target="_blank">express-like api</a> for node http triggers.
+See supported methods for <a href="https://github.com/Azure/azure-webjobs-sdk-script/blob/dev/src/WebJobs.Script/Content/Script/http/request.js" target="_blank">context.req</a> and <a href="https://github.com/Azure/azure-webjobs-sdk-script/blob/dev/src/WebJobs.Script/Content/Script/http/response.js" target="_blank">context.res</a>.
 
 ```javascript
 module.exports = function(context, req) {
